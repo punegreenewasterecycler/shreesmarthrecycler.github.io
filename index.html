@@ -56,6 +56,7 @@
     <div class="container">
       <div class="book-pickup-form">
         <h2>Book Home Pickup</h2>
+        <p class="text-center mb-4">Schedule a pickup for your e-waste and we'll handle the rest!</p>
         <form id="pickupForm">
           <div class="form-group">
             <input type="text" class="form-control" id="name" placeholder="Your Name" required>
@@ -140,9 +141,9 @@
       const phone = document.getElementById('phone').value;
       const address = document.getElementById('address').value;
 
-      // Create WhatsApp message
-      const message = `Name: ${name}%0APhone: ${phone}%0AAddress: ${address}`;
-      const whatsappUrl = `https://wa.me/+917758099914?text=${message}`;
+      // Create WhatsApp message with additional details
+      const message = `Hello, I would like to book a home pickup for e-waste recycling.%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Address:* ${address}%0A%0AThank you!`;
+      const whatsappUrl = `https://wa.me/+917758099914?text=${encodeURIComponent(message)}`;
 
       // Redirect to WhatsApp
       window.open(whatsappUrl, '_blank');
