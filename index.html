@@ -3,49 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shree Smart Recycler</title>
+  <title>Shree Samarth Recycler</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom CSS -->
-  <style>
-    .hero-section {
-      background: url('assets/img/background.jpg') no-repeat center center/cover;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-align: center;
-    }
-    .hero-section h1 {
-      font-size: 4rem;
-      font-weight: bold;
-    }
-    .services-section, .about-section {
-      padding: 80px 0;
-    }
-    .service-card {
-      text-align: center;
-      padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      transition: transform 0.3s;
-    }
-    .service-card:hover {
-      transform: translateY(-10px);
-    }
-    .footer {
-      background: #333;
-      color: white;
-      padding: 40px 0;
-    }
-  </style>
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Shree Smart Recycler</a>
+      <a class="navbar-brand" href="#">Shree Samarth Recycler</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -68,37 +36,58 @@
     </div>
   </nav>
 
+  <!-- Book Pickup Section -->
+  <section class="book-pickup-section">
+    <div class="container">
+      <div class="book-pickup-form">
+        <h2>Book Home Pickup</h2>
+        <form id="pickupForm">
+          <div class="form-group">
+            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number" required>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" id="address" rows="3" placeholder="Your Address" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <!-- Hero Section -->
   <section class="hero-section">
     <div class="container">
-      <h1>Welcome to Shree Smart Recycler</h1>
+      <h1>Welcome to Shree Samarth Recycler</h1>
       <p class="lead">Your trusted partner for responsible e-waste recycling.</p>
       <a href="#services" class="btn btn-primary btn-lg">Explore Our Services</a>
     </div>
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="services-section bg-light">
+  <section id="services" class="services-section">
     <div class="container">
       <h2 class="text-center mb-5">Our Services</h2>
       <div class="row">
         <div class="col-md-4">
           <div class="service-card">
-            <img src="assets/img/Photo-Waste-Ewaste.jpg" alt="E-Waste Collection" class="img-fluid mb-3 rounded">
+            <img src="assets/img/Photo-Waste-Ewaste.jpg" alt="E-Waste Collection" class="img-fluid mb-3">
             <h3>E-Waste Collection</h3>
             <p>We provide convenient e-waste collection services at your doorstep.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="service-card">
-            <img src="assets/img/Photo-Waste-Ewaste2.jpg" alt="Recycling Solutions" class="img-fluid mb-3 rounded">
+            <img src="assets/img/Photo-Waste-Ewaste.jpg" alt="Recycling Solutions" class="img-fluid mb-3">
             <h3>Recycling Solutions</h3>
             <p>State-of-the-art recycling processes to ensure minimal environmental impact.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="service-card">
-            <img src="assets/img/Photo-Waste-Ewaste4.jpg" alt="Data Destruction" class="img-fluid mb-3 rounded">
+            <img src="assets/img/Photo-Waste-Ewaste.jpg" alt="Data Destruction" class="img-fluid mb-3">
             <h3>Data Destruction</h3>
             <p>Secure data destruction to protect your privacy and sensitive information.</p>
           </div>
@@ -110,15 +99,15 @@
   <!-- About Section -->
   <section id="about" class="about-section">
     <div class="container">
-      <h2 class="text-center mb-5">About Shree Smart Recycler</h2>
+      <h2 class="text-center mb-5">About Shree Samarth Recycler</h2>
       <div class="row">
         <div class="col-md-6">
-          <img src="assets/img/Photo-Waste-Ewaste3.jpg" alt="About Us" class="img-fluid rounded">
+          <img src="assets/img/Photo-Waste-Ewaste.jpg" alt="About Us" class="img-fluid rounded">
         </div>
         <div class="col-md-6">
           <h3>Who We Are</h3>
-          <p>Shree Smart Recycler is a leading e-waste recycling company dedicated to reducing electronic waste and promoting sustainability. Our mission is to provide eco-friendly solutions for disposing of electronic devices responsibly.</p>
-          <a href="#contact" class="btn btn-secondary">Contact Us</a>
+          <p>Shree Samarth Recycler is a leading e-waste recycling company dedicated to reducing electronic waste and promoting sustainability. Our mission is to provide eco-friendly solutions for disposing of electronic devices responsibly.</p>
+          <a href="#contact" class="btn btn-primary">Contact Us</a>
         </div>
       </div>
     </div>
@@ -127,12 +116,31 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container text-center">
-      <p>&copy; 2023 Shree Smart Recycler. All rights reserved.</p>
-      <p>Contact us: info@shreesmarthrecycler.com | +123 456 7890</p>
+      <p>&copy; 2025 Shree Samarth Recycler. All rights reserved.</p>
+      <p>Contact us: <a href="mailto:punegreenewasterecycler@gmail.com">punegreenewasterecycler@gmail.com</a> | +917758099914 </p>
     </div>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript to Handle Form Submission -->
+  <script>
+    document.getElementById('pickupForm').addEventListener('submit', function (e) {
+      e.preventDefault(); // Prevent form submission
+
+      // Get form values
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const address = document.getElementById('address').value;
+
+      // Create WhatsApp message
+      const message = `Name: ${name}%0APhone: ${phone}%0AAddress: ${address}`;
+      const whatsappUrl = `https://wa.me/+917758099914?text=${message}`;
+
+      // Redirect to WhatsApp
+      window.open(whatsappUrl, '_blank');
+    });
+  </script>
 </body>
 </html>
