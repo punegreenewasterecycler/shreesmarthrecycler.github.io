@@ -16,6 +16,10 @@
     color: white !important;
   }
   
+  .navbar-brand i {
+    margin-right: 10px;
+  }
+  
   .nav-link:hover {
     color: var(--light-green) !important;
   }
