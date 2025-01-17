@@ -6,6 +6,7 @@
   
   body {
     font-family: Arial, sans-serif;
+    padding-top: 70px; /* To account for fixed navbar */
   }
   
   .navbar {
@@ -32,6 +33,7 @@
     justify-content: center;
     color: white;
     text-align: center;
+    margin-top: -70px; /* Offset fixed navbar */
   }
   
   .hero-section h1 {
@@ -55,7 +57,7 @@
     border-color: var(--dark-green);
   }
   
-  .services-section, .about-section {
+  .services-section, .about-section, .book-pickup-section {
     padding: 80px 0;
   }
   
@@ -97,11 +99,6 @@
   }
   
   /* Book Pickup Form Styles */
-  .book-pickup-section {
-    background-color: var(--light-green);
-    padding: 40px 0;
-  }
-  
   .book-pickup-form {
     max-width: 600px;
     margin: 0 auto;
