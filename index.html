@@ -142,7 +142,7 @@
       const address = document.getElementById('address').value;
 
       // Create WhatsApp message with additional details
-      const message = `Hello, I would like to book a home pickup for e-waste recycling.%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Address:* ${address}%0A%0AThank you!`;
+      const message = `Hello, I would like to book a home pickup for e-waste recycling.\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Address:* ${address}\n\nThank you!`;
       const whatsappUrl = `https://wa.me/+917758099914?text=${encodeURIComponent(message)}`;
 
       // Redirect to WhatsApp
