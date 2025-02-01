@@ -260,6 +260,12 @@
       const message = `Hello, I would like to book a home pickup for e-waste recycling.\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Address:* ${address}\n\nThank you!`;
       const whatsappUrl = `https://wa.me/+917758099914?text=${encodeURIComponent(message)}`;
 
+      // Trigger Google Ads conversion tracking
+      gtag('event', 'conversion', {
+        'send_to': 'AW-16823927659/LAgcCOLh24waEOuGo9Y-',
+        'transaction_id': '' // Add a unique transaction ID if available
+      });
+
       // Redirect to WhatsApp
       window.open(whatsappUrl, '_blank');
     });
